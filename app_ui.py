@@ -170,7 +170,7 @@ def retrieve(query, k=5):
     return [texts[i] for i in indices[0]]
 
 # -------------------- LLM --------------------
-API_KEY = "sk-**********************************************"
+API_KEY = st.secrets["API_KEY"]
 
 def generate_answer(query, context):
     url = "https://openrouter.ai/api/v1/chat/completions"
