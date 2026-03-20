@@ -107,7 +107,7 @@ def get_confidence(results):
 # -------------------- 9. LLM --------------------
 import requests
 
-API_KEY = "YOUR_API_KEY"   # 🔥 replace
+API_KEY = st.secrets["API_KEY"]   # 🔥 replace
 
 def generate_answer(query, context):
     url = "https://openrouter.ai/api/v1/chat/completions"
